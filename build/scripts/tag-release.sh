@@ -23,4 +23,4 @@ tag_and_push_release "${release_version}" "${msg}"
 
 # Make PR to update default branch if necessary
 git checkout "${default_branch}"
-bump_version_if_not_at "${release_version}"
+#bump_version_if_not_at "${release_version}"

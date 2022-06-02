@@ -48,4 +48,4 @@ tag_and_push_release "${full_version}" "${m}"
 
 # Make PR to update default branch if necessary
 git checkout "${default_branch}"
-bump_version_if_not_at "${candidate_for_version}"
+#bump_version_if_not_at "${candidate_for_version}"
