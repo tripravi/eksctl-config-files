@@ -51,6 +51,8 @@ jobs:
       - name: get version
         id: get_version
         run: echo ::set-output name=VERSION::$(echo ${GITHUB_REF#refs/*/})
+      - name: fail
+        run: exit 123
       - name: slack on success - team-pitch-black
         if: ${{ success() }}
         uses: actions-ecosystem/action-slack-notifier@fc778468d09c43a6f4d1b8cccaca59766656996a
